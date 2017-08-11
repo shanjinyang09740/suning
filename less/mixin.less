@@ -1,0 +1,9 @@
+.adapterFuc(@index) when (@index > 0){
+  @media (min-width: extract(@adapterList,@index)) {
+    html{
+      font-size: extract(@adapterList,@index)/@baseWidth*@baseFontSize;
+    }
+  }
+  //书写运算 空格分开
+  .adapterFuc(@index - 1);
+}

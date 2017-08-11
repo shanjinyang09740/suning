@@ -1,0 +1,33 @@
+/*底部页签部分*/
+.sn_tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding: 0.1rem 0;
+}
+.sn_tabs ul {
+  width: 100%;
+}
+.sn_tabs ul li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.sn_tabs ul li a {
+  display: block;
+  width: 100%;
+  color: #333333;
+}
+.sn_tabs ul li a .fa {
+  font-size: 0.4rem;
+}
+.sn_tabs ul li a p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.2rem;
+  padding-top: 0.05rem;
+}

@@ -1,0 +1,41 @@
+/*轮播图部分*/
+.sn_banner{
+  width: 100%;
+  overflow:hidden;
+  position: relative;
+  ul{
+    transform: translateX(-100%/10);
+    -webkit-transform: translateX(-100%/10);
+    &:first-child{
+      width: 100%*10;
+      li{
+        float: left;
+        width: 100%/10;
+        a{
+          display: block;
+          width: 100%;
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:last-child{
+      position: absolute;
+      right: 20/100rem;
+      bottom: 20/100rem;
+      li{
+        float: left;
+        width: 12/100rem;
+        height: 12/100rem;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-left: 12/100rem;
+        &.now{
+          background: @snColor;
+        }
+      }
+    }
+  }
+}
